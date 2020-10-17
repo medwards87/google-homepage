@@ -54,22 +54,56 @@
 			padding: 2px;
 			border: 2px solid red;
 			}
+		
+		#navbar_left {
+			display: flex;
+			margin: 25px 0 0 20px;
+			flex-direction: row;
+			justify-content: flex-start;
+			}
+		
+		#about {
+			margin: 0 15px 0 0;
+			}
 			
+		#navbar_right {
+			display: flex;
+			margin: 25px 20px 0 0;
+			flex-direction: row;
+			justify-content: flex-end;
+			}
+		
+		#gmail {
+			margin: 0 15px 0 0;
+			}
+		
+		#navbar {
+			display: flex;
+			}
+		
+		
 	</style>
 	<link rel="shortcut icon" href="googleicon.ico">
 </header>
 <body>
-	<div id="navbar_left" class="navbar">
-		<div id="about" class="navbar">
-			<a href="">About</a></div>
-		<div id="store" class="navbar">
-			<a href="">Store</a></div>
-	</div>
-	</div id="navbar_right" class="navbar">
-		<div id="gmail" class="navbar">
-			<a href="">Gmail</a></div>
-	        <div id="images" class="navbar">
+	<div id="navbar">
+		<div id="navbar_left" class="navbar">
+			<div id="about" class="navbar">
+				<a href="">About</a></div>
+			<div id="store" class="navbar">
+				<a href="">Store</a></div>
+		</div>
+		<div id="navbar_right" class="navbar">
+			<div id="gmail" class="navbar">
+				<a href="">Gmail</a></div>
+	    	<div id="images" class="navbar">
         		<a href="">Images</a></div>
+        
         	<div id="apps" title="Google Apps"></div>
-			<div id="profile_pic" title="My Profile"><img alt="My Profile" src="profilepic.jpg" class="pic-border" id="profile_pic"></div>        		
-
+			<div id="profile_pic" title="My Profile">
+				<a href="">
+					<img alt="My Profile" src="profilepic.jpg" class="pic-border" id="profile_pic">
+				</a>
+			</div>
+		</div>
+	</div>
