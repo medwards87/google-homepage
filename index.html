@@ -33,7 +33,7 @@
 			height: 20px;
 			background: url('appsoff.png') no-repeat;
 			background-size: contain;
-			margin-right: 15px;
+			margin: 0 0 0 15px;
 			}
 			
 		#apps:hover {
@@ -45,7 +45,7 @@
 		#profile_pic {
 			width: 35px;
 			height: 35px;
-			margin-right: 15px;
+			margin: 0 15px 0 8px;
 			border-radius: 50%;
 			}
 		
@@ -57,7 +57,8 @@
 		
 		#navbar_left {
 			display: flex;
-			margin: 25px 0 0 20px;
+			align-items: center;
+			margin: 15px 0 0 20px;
 			flex-direction: row;
 			justify-content: flex-start;
 			}
@@ -68,17 +69,20 @@
 			
 		#navbar_right {
 			display: flex;
-			margin: 25px 20px 0 0;
+			align-items: center;
+			margin: 15px 20px 0 0;
 			flex-direction: row;
 			justify-content: flex-end;
 			}
-		
+				
 		#gmail {
 			margin: 0 15px 0 0;
 			}
 		
-		#navbar {
+		#navbar_container {
 			display: flex;
+			align-items: center;
+			justify-content: space-between;
 			}
 		
 		
@@ -86,7 +90,7 @@
 	<link rel="shortcut icon" href="googleicon.ico">
 </header>
 <body>
-	<div id="navbar">
+	<div id="navbar_container" class="navbar">
 		<div id="navbar_left" class="navbar">
 			<div id="about" class="navbar">
 				<a href="">About</a></div>
@@ -98,7 +102,6 @@
 				<a href="">Gmail</a></div>
 	    	<div id="images" class="navbar">
         		<a href="">Images</a></div>
-        
         	<div id="apps" title="Google Apps"></div>
 			<div id="profile_pic" title="My Profile">
 				<a href="">
@@ -106,4 +109,12 @@
 				</a>
 			</div>
 		</div>
+	<div id="main_container" class="main">
+		<div id="logo" class="main"></div>
+	<div id="search-container" class="search">
+		<div id="google_search" class="search"></div>
+		<div id="feeling_lucky" class="search"></div>
 	</div>
+</body>
+
+</html>
