@@ -105,9 +105,35 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin: 100px 0;
+			margin: 150px 0;
 			min-height: 50%;
 			min-width: 60%;
+			}
+		
+		.search-bar {
+			margin: 20px 0 30px 0;
+			width: 582px;
+			height: 44px;
+			border: 1px solid rgba(134, 130, 130, 0.35);
+			border-radius: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0;
+			}
+			
+		#searchIcon {
+			width: 15px;
+			height: 15px;
+			margin: 0 0 0 10px;
+			padding: 0;
+			}
+		
+		#micIcon {
+			width: 15px;
+			height: 15px;
+			margin: 0 10px 0 0;
+			padding: 0;
 			}
 	</style>
 	<link rel="shortcut icon" href="googleicon.ico">
@@ -127,7 +153,7 @@
 		    	<div id="images" class="navbar">
 	        		<a href="">Images</a></div>
 	        	<div id="apps" title="Google Apps"></div>
-				<div id="profile_pic" title="My Profile">
+				<div id="profile_pic" title="medwards87's Profile">
 					<a href="">
 						<img alt="My Profile" src="profilepic.jpg" class="pic-border" id="profile_pic">
 					</a>
@@ -137,6 +163,11 @@
 	</div>	
 	<div class="searchzone">
 		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+		<div class="search-bar">
+			<img src="mag-glass.png" id="searchIcon">
+			<input id="input-search" title="search">
+			<img src="mic.png" id="micIcon">
+		</div>
 	</div>
 </body>
 
